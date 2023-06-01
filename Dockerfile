@@ -11,7 +11,7 @@ RUN ./mvnw package
 ##########################
 # Run Time
 #########################
-FROM eclipse-temurin:17-jdk-alpine as serve
+FROM eclipse-temurin:17-jdk-alpine as server
 
 #Copy all files from /target/*.jar from step 2 TO /code
 WORKDIR /code
